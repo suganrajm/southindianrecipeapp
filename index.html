@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>South Indian Recipe Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body >
+    <div class="container">
+        <h1>South Indian Recipe Recommender</h1>
+        <div class="input-section">
+            <input type="text" id="ingredient-input" placeholder="Enter an ingredient">
+            <button id="add-button">Add</button>
+        </div>
+        <ul id="ingredient-list"></ul>
+        <button id="submit-button">Get Recipes</button>
+        <div id="recommendations"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
